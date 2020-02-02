@@ -1,0 +1,15 @@
+{% extends 'HM/base.html' %}
+
+{% block content %}
+<div class="">
+    {% for pd in allproduct %}
+    <div >
+        <h1>ชื่อสินค้า : {{pd.product_name}}</h1>
+        <h4>ราคา    :{{pd.product_price}} บาท</h4>
+        <p>รายละเอียด :{{pd.product_detail}}</p>
+        <img src={{pd.product_img}} >
+        <hr>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}
